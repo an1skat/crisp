@@ -1,9 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { formatPrice } from "../../utils/format";
 
+let a;
+
 export function CartWidget() {
   const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    setTotal(1161);
+  }, [a]);
 
   return (
     <Link to="/account/:id/cart">
