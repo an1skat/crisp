@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { formatPrice } from "../../utils/format";
 
 let a;
+// заглушка для тайпскрипта
 
 export function CartWidget() {
   const [total, setTotal] = useState(0);
